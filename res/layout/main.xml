@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+	    <TextView
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="URL:"
+	    	android:textAppearance="?android:attr/textAppearanceMedium"
+	    	android:layout_marginTop="10dp"
+	    />
+	    <AutoCompleteTextView
+	    	android:id="@+id/etUrl"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+	    />
+	    <TextView
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="Charset:"
+	    	android:textAppearance="?android:attr/textAppearanceMedium"
+	    	android:layout_marginTop="10dp"
+	    />
+		<RadioGroup
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<RadioButton android:checked="true" android:id="@+id/rbAllPrintable" android:text="All Printable" android:textSize="14sp" />
+			<RadioButton android:checked="false" android:id="@+id/rbOnlyAlphaNums" android:text="Only Letters and Digits" android:textSize="14sp" />
+		</RadioGroup>
+	    
+	    <TextView
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="Password:"
+	    	android:textAppearance="?android:attr/textAppearanceMedium"
+	    	android:layout_marginTop="10dp"
+	    />
+		<EditText
+		    android:id="@+id/etPassword"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:inputType="textPassword"
+		    android:text=""
+		    />
+		<LinearLayout 
+		 	android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="20dp"
+		    >
+			<Button
+				android:id="@+id/btnMakePassword"
+				android:layout_width="160sp"
+				android:layout_height="wrap_content"
+				android:text="Make Password"
+				android:layout_gravity="right"
+			/>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>
